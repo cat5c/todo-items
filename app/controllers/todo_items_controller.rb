@@ -10,6 +10,7 @@ class TodoItemsController < ApplicationController
   # GET /todo_items/1
   # GET /todo_items/1.json
   def show
+    @todo_item = TodoItem.find(params[:id])
   end
 
   # GET /todo_items/new
